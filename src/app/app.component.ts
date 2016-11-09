@@ -11,8 +11,8 @@ import { Podaci } from '../providers/podaci';
   template: `<ion-nav [root]="rootPage"></ion-nav>`
 })
 export class Mb {
-  
-  rootPage = TabsPage;
+
+  rootPage = Welcome;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {

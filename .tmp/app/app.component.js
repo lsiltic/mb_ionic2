@@ -10,10 +10,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
-import { TabsPage } from '../pages/tabs/tabs';
+import { Welcome } from '../pages/welcome/welcome';
 export var Mb = (function () {
     function Mb(platform) {
-        this.rootPage = TabsPage;
+        this.rootPage = Welcome;
         platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.
@@ -25,9 +25,8 @@ export var Mb = (function () {
         Component({
             template: "<ion-nav [root]=\"rootPage\"></ion-nav>"
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof Platform !== 'undefined' && Platform) === 'function' && _a) || Object])
+        __metadata('design:paramtypes', [Platform])
     ], Mb);
     return Mb;
-    var _a;
 }());
 //# sourceMappingURL=app.component.js.map

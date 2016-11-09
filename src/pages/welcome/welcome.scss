@@ -1,13 +1,21 @@
 
 page-tutorial {
+
+  .swiper-pagination-bullet {
+    background: #E28000 none repeat scroll 0 0;
+  }
+
+
+
   .toolbar-background {
     background: transparent;
     border-color: transparent;
+
   }
 
   .slide-zoom {
     height: 100%;
-    background-color: red;
+
   }
 
   .slide-title {
@@ -28,11 +36,57 @@ page-tutorial {
     padding: 0 40px;
     font-size: 14px;
     line-height: 1.5;
-    color: #60646B;
+    color: #FFFFFF;
 
     b {
-      color: #000000;
+      color: #18B0AE;
     }
   }
+
+  h2{
+
+    color: #FFFFFF;
+
+    b {
+      color: #18B0AE;
+    }
+  }
+
+  #snow{
+	background: none;
+  background-color: #290B2B;
+	font-family: Androgyne;
+	background-image: url('../assets/img/s1.png'), url('../assets/img/s2.png'), url('../assets/img/s3.png');
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:1;
+	-webkit-animation: snow 30s linear infinite;
+	-moz-animation: snow 30s linear infinite;
+	-ms-animation: snow 30s linear infinite;
+	animation: snow 30s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
 
 }
